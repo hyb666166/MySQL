@@ -1,0 +1,44 @@
+创建数据库
+Create database 数据库名；
+选择数据库
+Use 数据库名；
+删除数据库
+Drop database 数据库名；
+查看当前使用的数据库
+ Select database();
+查看数据库表信息
+show tables;
+创建表
+Create table 表名
+（ code decimal（6），
+     name varchar（30），列
+    price decimal（5，2）
+  ）；
+Create schema [数据库名称] default character set utf8 collate utf8_general_ci;
+--创建数据库采用create schema和create database创建数据库的效果一样。
+ 显示表的结构
+Desc 表名；
+
+
+
+利用子查询来创建表
+    根据表名表生成新表表名1
+Create table 表名
+Select * from 表名1;
+使用 select查询表中数据
+Select * from 表名1;
+修改表的结构
+	• 在一个表中增加一个新列
+	Alter table 表名
+	Add 新列名 数据类型(n);
+	• 修改表中已有的列
+	Alter table 表名
+	Modify 修改列名 数据类型(n) default 默认值或修改值;
+	• 删除列
+	Alter table 表名
+	Drop 列名;
+截断表
+Truncate table 表名;
+删除了表中所有的数据行,表的结构仍然保留.
+删除表
+Drop table 表名;
