@@ -18,7 +18,7 @@ Create schema [数据库名称] default character set utf8 collate utf8_general_
 --创建数据库采用create schema和create database创建数据库的效果一样。
  显示表的结构
 Desc 表名；
-! [image] (https://github.com/hyb666166/MySQL/blob/master/imageMySQL/image.png)
+![image](https://github.com/hyb666166/MySQL/blob/master/imageMySQL/image.png)
 
 
 利用子查询来创建表
